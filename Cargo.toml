@@ -6,3 +6,12 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# gRPC implementation for rust
+tonic = "0.7"
+# prost is protocol buffer and implementation for rust
+prost = "0.10"
+# Aysnc Runtime for the rust
+tokio = { version = "1.0", features = ["macros", "rt-mutli-thread"] }
+
+[build-dependencies]
+tonic-build = "0.7"
